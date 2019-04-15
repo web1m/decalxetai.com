@@ -5,7 +5,7 @@ export default () => (
         <div className="col-lg-4 mb-5 mb-lg-0">
           <a href="../index.html">
             <img
-              src="staTic/img/logo-footer.png"
+              src="/static/img/logo-footer.png"
               class="rounded mb-3"
               style={{ width: '150px' }}
             />
