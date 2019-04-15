@@ -25,7 +25,10 @@ export default class Header extends React.Component {
   render() {
     return (
       <>
-        <Navbar className="navbar navbar-expand-lg navbar-dark bg-primary navbar-sticky sticky shadow-lg">
+        <Navbar
+          className="navbar navbar-expand-lg navbar-dark navbar-sticky sticky shadow-lg"
+          style={{ background: '#FF8D00' }}
+        >
           <div className="container">
             <NavbarBrand href="/">Webdecal</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />

@@ -15,6 +15,7 @@ export default ({ hero }) => {
                 <a
                   href="#"
                   className="btn btn-primary btn-circle btn-translate--hover mr-4"
+                  style={{ background: '#FF8D00', border: '0' }}
                 >
                   Danh sách dịch vụ
                 </a>
