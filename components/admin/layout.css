@@ -1,0 +1,212 @@
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+  animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+  transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+  transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+  transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%,
+  10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%,
+  75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%,
+  100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-foldCubeAngle {
+  0%,
+  10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%,
+  75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%,
+  100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+.hero {
+  position: relative;
+  background-color: var(--offwhite);
+  border-bottom: 2px solid #1e88e5;
+  max-height: 600px;
+  min-height: 300px;
+  height: 45vh;
+}
+
+.shapes {
+  width: 100%;
+  position: absolute;
+  transform: translateZ(0);
+  overflow: hidden;
+  bottom: 0;
+  top: 0;
+}
+
+.titles {
+  height: 0;
+  z-index: 2;
+  position: relative;
+  font-family: var(--font-header), var(--font-list);
+  text-transform: uppercase;
+  /*top: calc(14.5vh - 56px)*/
+  top: calc(30% - 56px);
+  text-align: center;
+  /*top: 80px;*/
+}
+
+.titles h1 {
+  font-size: 2.875em;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.titles h3 {
+  line-height: 2;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 1.25em;
+  color: #5e7283;
+}
+
+.shape {
+  --size: 30px;
+  position: absolute;
+  will-change: transform;
+  background: transparent no-repeat center;
+  background-size: contain;
+  height: var(--size);
+  width: var(--size);
+}
+
+:global(.penta) {
+  background-image: url(/static/shapes/penta.svg);
+}
+
+:global(.point) {
+  background-image: url(/static/shapes/point.svg);
+}
+
+:global(.square) {
+  background-image: url(/static/shapes/square.svg);
+}
+
+:global(.cross) {
+  background-image: url(/static/shapes/cross.svg);
+}
+
+:global(.circle) {
+  background-image: url(/static/shapes/circle.svg);
+}
+
+@media screen and (max-width: 421px) {
+  .shape {
+    --size: 20px;
+  }
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+/* 
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: red;
+}
+
+.inputfile:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+*/
+.inputfile + label {
+  cursor: pointer;
+}
+.inputfile + label * {
+  pointer-events: none;
+}

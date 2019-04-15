@@ -1,0 +1,14 @@
+{
+  "title": "The new blog 2",
+  "slug": "the-new-blog-2",
+  "date": "2019-04-01T04:56:49.790Z",
+  "thumbnail": "/static/img/code-1.jpg",
+  "bodyContent": "Make great again",
+  "bodyHtml": "<p>Make great again</p>\n",
+  "preview": "Make great again",
+  "dir": "content/blog",
+  "base": "the-new-blog-2.json",
+  "ext": ".json",
+  "sourceBase": "the-new-blog-2.md",
+  "sourceExt": ".md"
+}

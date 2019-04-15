@@ -1,0 +1,45 @@
+{
+  "fileMap": {
+    "content/blog/1.json": {
+      "title": "test blog 1",
+      "date": "2019-03-30T14:04:49.326Z",
+      "thumbnail": "/static/img/img-1-800x600.jpg",
+      "slug": "test-blog-1",
+      "preview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+      "dir": "content/blog",
+      "base": "1.json",
+      "ext": ".json",
+      "sourceBase": "1.md",
+      "sourceExt": ".md"
+    },
+    "content/blog/hello-world.json": {
+      "title": "hello world again",
+      "slug": "hello-world",
+      "date": "2019-03-30T14:04:49.326Z",
+      "thumbnail": "/static/img/img-1-800x600.jpg",
+      "preview": "Hello",
+      "dir": "content/blog",
+      "base": "hello-world.json",
+      "ext": ".json",
+      "sourceBase": "hello-world.md",
+      "sourceExt": ".md"
+    },
+    "content/blog/the-new-blog-2.json": {
+      "title": "The new blog 2",
+      "slug": "the-new-blog-2",
+      "date": "2019-04-01T04:56:49.790Z",
+      "thumbnail": "/static/img/code-1.jpg",
+      "preview": "Make great again",
+      "dir": "content/blog",
+      "base": "the-new-blog-2.json",
+      "ext": ".json",
+      "sourceBase": "the-new-blog-2.md",
+      "sourceExt": ".md"
+    }
+  },
+  "sourceFileArray": [
+    "content/blog/1.md",
+    "content/blog/hello-world.md",
+    "content/blog/the-new-blog-2.md"
+  ]
+}

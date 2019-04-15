@@ -1,0 +1,14 @@
+{
+  "title": "hello world again",
+  "slug": "hello-world",
+  "date": "2019-03-30T14:04:49.326Z",
+  "thumbnail": "/static/img/img-1-800x600.jpg",
+  "bodyContent": "_Hello_",
+  "bodyHtml": "<p><em>Hello</em></p>\n",
+  "preview": "Hello",
+  "dir": "content/blog",
+  "base": "hello-world.json",
+  "ext": ".json",
+  "sourceBase": "hello-world.md",
+  "sourceExt": ".md"
+}
