@@ -1,9 +1,10 @@
 export default ({ hero }) => {
   return (
     <section
-      className="slice slice-xl pb-0 bg-secondary"
+      className="slice slice-xl pb-0 bg-secondary pb-5"
       data-separator="rounded-continuous"
       data-separator-bg="dark"
+      style={{ background: 'white' + ' !important' }}
     >
       <div className="container d-flex align-items-end px-0 pt-md pt-lg-0">
         <div className="col">
@@ -15,6 +16,7 @@ export default ({ hero }) => {
                 <a
                   href="#"
                   className="btn btn-primary btn-circle btn-translate--hover mr-4"
+                  style={{ background: '#FF8D00', border: '0' }}
                 >
                   Danh sách dịch vụ
                 </a>
@@ -27,11 +29,14 @@ export default ({ hero }) => {
               </div>
             </div>
             <div className="col-lg-6 mt-5 mt-lg-0 align-self-end">
-              <img
+              {/* <img
                 alt="Image placeholder"
                 src={hero.image}
                 className="img-fluid img-center"
-              />
+              /> */}
+              <video autoPlay loop muted playsinline style={{ width: '100%' }}>
+                <source src="/static/video/Render.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </div>
