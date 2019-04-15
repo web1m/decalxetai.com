@@ -5,8 +5,8 @@ export default () => {
         <div className="row row-grid align-items-center justify-content-center">
           <div className="col-lg-4">
             <div className="pr-lg-5 text-center text-lg-right">
-              <h5 className="mb-0 text-white">
-                Sign up for the daily newsletter
+              <h5 className="mb-0 text-white" style={{ fontSize: '0.9rem' }}>
+                Để lại số điện thoại để chúng tôi liên lạc bạn
               </h5>
             </div>
           </div>
@@ -14,21 +14,21 @@ export default () => {
             <form>
               <div className="form-group shadow mb-0">
                 <div className="input-group input-group-lg">
-                  <div className="input-group-prepend border-right-0">
-                    <span className="input-group-text bg-white">
-                      <i className="far fa-envelope-open" />
-                    </span>
-                  </div>
                   <input
                     type="text"
                     className="form-control border-left-0"
-                    placeholder="Enter your email ..."
+                    style={{ height: 50, fontSize: 16 }}
+                    placeholder="Nhập vào số điện thoại ..."
                     data-kwimpalastatus="alive"
                     data-kwimpalaid="1549300727124-3"
                   />
                   <div className="input-group-append">
-                    <button type="button" className="btn btn-outline-light">
-                      Subscribe
+                    <button
+                      type="button"
+                      className="btn btn-outline-light"
+                      style={{ height: 50, fontSize: 16 }}
+                    >
+                      Gửi
                     </button>
                   </div>
                 </div>

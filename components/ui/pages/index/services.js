@@ -6,12 +6,12 @@ export default ({ services }) => {
           <h3 className="h2 text-white">{services.title}</h3>
           <div className="mt-5">
             <p className="text-light mt-4">{services.description}</p>
-            <a
+            {/* <a
               href="#"
               className="btn btn-outline-light btn-circle btn-translate--hover d-none d-lg-inline-block"
             >
               Xem thêm
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
