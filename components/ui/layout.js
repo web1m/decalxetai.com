@@ -7,6 +7,7 @@ import Head from 'next/head'
 export default props => (
   <>
     <Head>
+      <title>{props.title}</title>
       <link
         rel="apple-touch-icon"
         sizes="180x180"
