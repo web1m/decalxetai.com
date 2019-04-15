@@ -27,7 +27,9 @@ export default class Header extends React.Component {
       <>
         <Navbar className="navbar navbar-expand-lg navbar-dark bg-primary navbar-sticky sticky shadow-lg">
           <div className="container">
-            <NavbarBrand href="/">Webdecal</NavbarBrand>
+            <NavbarBrand href="/"> 
+              <img src="staTic/img/logo-web.png" style ={{width: '98px'}} /> 
+            </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
