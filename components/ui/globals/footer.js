@@ -1,5 +1,5 @@
 export default () => (
-  <footer className="footer footer-dark bg-gradient-primary">
+  <footer className="footer footer-dark " style={{ background: '#05172A' }}>
     <div className="container">
       <div className="row pt-md">
         <div className="col-lg-4 mb-5 mb-lg-0">
