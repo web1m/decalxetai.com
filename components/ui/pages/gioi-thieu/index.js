@@ -1,7 +1,10 @@
 export default ({ title, text, features }) => {
   return (
     <>
-      <section className="sice slice-lg bg-gradient-primary pb-50">
+      <section
+        className="sice slice-lg pb-50"
+        style={{ backgroundColor: '#05172A' }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-7 py-lg">
@@ -68,6 +71,7 @@ export default ({ title, text, features }) => {
                 <a
                   href="/"
                   className="btn btn-primary btn-circle btn-translate--hover px-4"
+                  style={{ backgroundColor: '#05172A', border: '0' }}
                 >
                   Xem dịch vụ
                 </a>
