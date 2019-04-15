@@ -25,7 +25,10 @@ export default class Header extends React.Component {
   render() {
     return (
       <>
-        <Navbar className="navbar navbar-expand-lg navbar-dark bg-primary navbar-sticky sticky shadow-lg">
+        <Navbar
+          className="navbar navbar-expand-lg navbar-dark navbar-sticky sticky shadow-lg"
+          style={{ background: '#FF8D00' }}
+        >
           <div className="container">
             <NavbarBrand href="/">
               <img src="/static/img/logo-web.png" style={{ width: '98px' }} />
@@ -44,11 +47,12 @@ export default class Header extends React.Component {
                     Dịch vụ
                   </DropdownToggle>
                   <DropdownMenu right>
-                    <DropdownItem>Dán decal kính mờ văn phòng</DropdownItem>
-                    <DropdownItem>Dán decal quảng cáo xe tải</DropdownItem>
-                    <DropdownItem>Decal dán kính chống nắng</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>Cắt Decal vi tính</DropdownItem>
+                    <DropdownItem>Dán ô tô cá nhân</DropdownItem>
+                    <DropdownItem>Dán thùng xe tải</DropdownItem>
+                    <DropdownItem>Dán xe bus / xe 46 chổ</DropdownItem>
+                    <DropdownItem>Dán decal xe 16 chổ</DropdownItem>
+                    <DropdownItem>In Hiflex / Decal</DropdownItem>
+                    <DropdownItem>In namecard & Standee</DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <NavItem>
@@ -58,7 +62,7 @@ export default class Header extends React.Component {
                   <NavLink href="/blog">Góc tư vấn</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/lien-he">Liên hệ</NavLink>
+                  <NavLink href="/lien-he">Liên hệ 0931 780 080</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
