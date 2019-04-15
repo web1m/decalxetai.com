@@ -1,10 +1,14 @@
 export default () => (
-  <footer className="footer footer-dark bg-gradient-primary">
+  <footer className="footer footer-dark " style={{ background: '#05172A' }}>
     <div className="container">
       <div className="row pt-md">
         <div className="col-lg-4 mb-5 mb-lg-0">
           <a href="../index.html">
-            <img src="/static/img/white.png" alt="Footer logo" height="70" />
+            <img
+              src="staTic/img/logo-footer.png"
+              class="rounded mb-3"
+              style={{ width: '150px' }}
+            />
           </a>
           <p className="text-sm">
             A unique and beautiful collection of UI elements that are all
@@ -60,11 +64,8 @@ export default () => (
       <div className="row align-items-center justify-content-md-between py-4 mt-4 delimiter-top">
         <div className="col-md-6">
           <div className="copyright text-sm font-weight-bold text-center text-md-left">
-            © 2018{' '}
-            <a href="/" className="font-weight-bold" target="_blank">
-              ZDecal
-            </a>
-            . All rights reserved.
+            © 2018 <a href="/" className="font-weight-bold" target="_blank" />.
+            All rights reserved.
           </div>
         </div>
         <div className="col-md-6">
