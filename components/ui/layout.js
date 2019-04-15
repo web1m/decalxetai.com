@@ -6,7 +6,9 @@ import Head from 'next/head'
 
 export default props => (
   <>
-    <Head />
+    <Head>
+      <title>{props.title}</title>
+    </Head>
 
     <div>{props.children}</div>
 

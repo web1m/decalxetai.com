@@ -13,7 +13,7 @@ export default () => {
     attributes: { hero, services, testimonial }
   } = content
   return (
-    <Layout>
+    <Layout title="Home page">
       <Header />
       <Hero hero={hero} />
       <Services services={services} />
